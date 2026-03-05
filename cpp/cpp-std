@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a, b;
+    cin >> a;
+    cin >> b;
+    cout << a+b << "\n";
+}
+
+/*
+#include <iostream>
+int main(){
+    std::cout << "Hello, "  << " GKNU ! " << std::endl << "I am happy" ;
+}
