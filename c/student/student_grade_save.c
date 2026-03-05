@@ -32,4 +32,5 @@ int main() {
   fclose(fp);
   printf("정보를 저장했습니다.\n");
   return 0;
+
 }
