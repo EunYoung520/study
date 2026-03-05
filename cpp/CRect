@@ -1,0 +1,38 @@
+//클래스의 활용법, 사각형 넓이 구하기
+#include<iostream>
+using namespace std;
+
+class CRect{
+    int wid, hig;
+public:
+    CRect(){ wid=4; hig=3;}
+    int Area(){
+        return wid * hig;
+    }
+};
+
+int main(){
+    CRect r;
+    cout << r.Area();
+}
+
+/*
+#include<iostream>
+using namespace std;
+
+class CRect{
+private:
+    int wid, hig;
+
+public:
+    CRect(){ wid=4; hig=3;}
+    int Area(){
+        return wid * hig;
+    }
+};
+
+int main(){
+    CRect r;
+    cout << r.Area();
+}
+*/
