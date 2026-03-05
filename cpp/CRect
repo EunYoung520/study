@@ -3,24 +3,6 @@
 using namespace std;
 
 class CRect{
-    int wid, hig;
-public:
-    CRect(){ wid=4; hig=3;}
-    int Area(){
-        return wid * hig;
-    }
-};
-
-int main(){
-    CRect r;
-    cout << r.Area();
-}
-
-/*
-#include<iostream>
-using namespace std;
-
-class CRect{
 private:
     int wid, hig;
 
@@ -35,4 +17,31 @@ int main(){
     CRect r;
     cout << r.Area();
 }
+
+
+/* 
+main으로부터 값을 받아 private 안의 변수를 다룰 수 있다.
+#include<iostream>
+using namespace std;
+
+class CRect{
+private:
+    int wid, hig;
+
+public:
+    CRect(){ wid=4; hig=3;}
+    CRect(int a, int b) {wid =a; hig=b;}
+    int Area(){
+        return wid * hig;
+    }
+};
+
+int main(){
+    CRect me;
+    CRect r(2,3);
+    cout << r.Area();
+}
 */
+
+
+
