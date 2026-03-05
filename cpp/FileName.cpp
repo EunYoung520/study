@@ -33,14 +33,15 @@ int main() {
 	Node* head = NULL;
 	int n;
 	char value[20];
-	printf("ÀúÀåÇÒ ³ëµåÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("ì €ì¥í•  ë…¸ë“œì˜ ê°œìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {
-		printf("³ëµå¿¡ ÀúÀåÇÒ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		printf("ë…¸ë“œì— ì €ì¥í•  ê°’ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		scanf("%s", value);
 		append(&head, value);
 	}
-	printf("ÀÔ·ÂµÈ ¸®½ºÆ®: ");
+	printf("ì…ë ¥ëœ ë¦¬ìŠ¤íŠ¸: ");
 	printList(head);
 	return 0;
+
 }
