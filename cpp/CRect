@@ -44,15 +44,16 @@ int main(){
     cout << r.Area();
 }
 
-CRect(){ wid=4; hig=3;} - CRect me; //연결
-=> class에서 CRect를 생성해 값을 넣었기 때문에 main에서 함수를 호출해야 사용 가능 
+CRect() ↔ CRect me;
+→ 객체 me가 생성될 때 기본 생성자가 실행되어 wid=4, hig=3이 됨
 
-CRect(int a, int b) {wid =a; hig=b;} - CRect r(2,3); //연결 
-=> class에서 CRect(int a, int b)로 값을 지정하고, wid, hig를 변수에 연결해 들어갈 값을 지정해줬음으로 main에서 함수를 호출하고 a,b의 방식을 통해 값을 넣을 수 있음 
+CRect(int a,int b) ↔ CRect r(2,3);
+→ 객체 r이 생성될 때 매개변수 생성자가 실행되어
+a=2, b=3 값이 wid와 hig에 저장됨
 
 
 Q. struct도 private와 public이 사용 가능한데 그럼 cpp 에서 class와 struct의 차이점은
-   class는 기본값이 private이고, class는 기본값이 public인 것 뿐인가? 
+   class는 기본값이 private이고, struct는 기본값이 public인 것 뿐인가? 
 */
 
 
