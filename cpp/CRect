@@ -21,6 +21,8 @@ int main(){
 
 /* 
 main으로부터 값을 받아 private 안의 변수를 다룰 수 있다.
+-> private안의 값은 원래 다루지 못하지만 public 안의 "CRect(int a, int b) {wid =a; hig=b;}"를 통해 값을 부여할 수 있음 
+    -> 이것으로 private안의 변수에 들어갈 값을 제한할 수 있음 
 #include<iostream>
 using namespace std;
 
@@ -41,6 +43,16 @@ int main(){
     CRect r(2,3);
     cout << r.Area();
 }
+
+CRect(){ wid=4; hig=3;} - CRect me; //연결
+=> class에서 CRect를 생성해 값을 넣었기 때문에 main에서 함수를 호출해야 사용 가능 
+
+CRect(int a, int b) {wid =a; hig=b;} - CRect r(2,3); //연결 
+=> class에서 CRect(int a, int b)로 값을 지정하고, wid, hig를 변수에 연결해 들어갈 값을 지정해줬음으로 main에서 함수를 호출하고 a,b의 방식을 통해 값을 넣을 수 있음 
+
+
+Q. struct도 private와 public이 사용 가능한데 그럼 cpp 에서 class와 struct의 차이점은
+   class는 기본값이 private이고, class는 기본값이 public인 것 뿐인가? 
 */
 
 
