@@ -54,6 +54,25 @@ a=2, b=3 값이 wid와 hig에 저장됨
 
 Q. struct도 private와 public이 사용 가능한데 그럼 cpp 에서 class와 struct의 차이점은
    class는 기본값이 private이고, struct는 기본값이 public인 것 뿐인가? 
+
+#include<iostream>
+using namespace std;
+
+class CRect {
+	int w, h;
+public:
+	CRect() :w(2), h(3) {} //본문대입
+	int Area() {
+		return w * h;
+	}
+};
+
+int main() {
+	CRect r1;
+	cout << r1.Area() << '\n'
+}
+
+쪽지시험 내용 
 */
 
 
