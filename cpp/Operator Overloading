@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class CRect {
+	int w, h;
+public:
+	CRect():w(3),h(4){}
+	CRect(int a, int b):w(a), h(b){}
+	CRect(int a) :w(a), h(a) {}
+	int Area() {
+		return w * h;
+	}
+};
+
+int main() {
+	CRect me;
+	cout << me.Area() << '\n';
+	CRect he(8);
+	cout << he.Area() << '\n';
+	CRect r(2,3);
+	cout << r.Area();
+}
