@@ -10,7 +10,9 @@ public class Hello2026 extends JFrame {
         setSize(500,350);
         Container c=getContentPane();
         c.setBackground(Color.WHITE);
-        c.setLayout(new FlowLayout(FlowLayout.LEFT, 30, 40));
+        //c.setLayout(new FlowLayout(FlowLayout.CENTER, 30, 40));
+        FlowLayout flow=new FlowLayout(FlowLayout.CENTER, 30, 40);
+        c.setLayout(flow);
         c.add(new JButton("add"));
         c.add(new JButton("sub"));
         c.add(new JButton("mul"));
