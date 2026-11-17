@@ -21,6 +21,3 @@ pip install pandas numpy
 python bigdata_intro_assignment_02.py
 ```
 
-실행 전 `library_loans.csv`를 현재 작업 디렉터리에 준비해야 합니다. 입력 CSV는 업로드된 노트북에 포함되어 있지 않아 저장소에 추가하지 않았습니다. 따라서 CSV 관련 문제의 실제 출력값은 확인하지 않았습니다.
-
-원본 노트북의 풀이를 유지하면서 출력 방식을 스크립트에 맞게 변경했고, 4번 문제에서 요구한 CSV 저장 코드를 보완했습니다. `overdue_loans.csv`는 실행 시 생성되는 결과물입니다.
